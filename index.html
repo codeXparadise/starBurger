@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star-Burger | Eat Without Regret</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                primary: "#F59E0B", // Amber-500
+                secondary: "#78350F", // Amber-900
+                light: "#FFFBEB", // Amber-50
+                dark: "#1F1508",
+                accent: "#EF4444", // Red-500
+              }
+            },
+            fontFamily: {
+              display: ['Lobster', 'cursive'],
+              body: ['DM Sans', 'sans-serif'],
+            },
+            backgroundImage: {
+              'pattern-checkered': "url('https://www.transparenttextures.com/patterns/notebook.png')", // Fallback or similar subtle pattern
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'DM Sans', sans-serif;
+        background-color: #FFFBEB;
+        color: #78350F;
+        overflow-x: hidden;
+      }
+      .font-display {
+        font-family: 'Lobster', cursive;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #FFFBEB;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #F59E0B;
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #D97706;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "framer-motion": "https://esm.sh/framer-motion@^12.34.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "gsap": "https://esm.sh/gsap@^3.14.2"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
